@@ -104,10 +104,14 @@ header  {
 		<h1 id="prp">Les Handicaps :</h1>
 
 		<div id="vi1div">
-			<video id="video1" controls disablePictureInPicture controlsList="nodownload">
+			<video id="video1" controls disablePictureInPicture>
 			 	<source src="video.mp4" type="video/mp4">
 				NAVIGATEUR TROP VIEUX POUR CHARGER LA VIDEO mais vous pouvez toujours la <a href="video.mp4">Telecharger</a>
 			</video>
+			<script type="text/javascript">
+				vid=document.getElementsByID('video1')
+				vid.disablePictureInPicture = true
+			</script>
 		</div>
 		<div id="org">
 		<div id="description">
