@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+	$('.video1').parent().click(function () {
+		if($(this).children(".video1").get(0).paused){        $(this).children(".video1").get(0).play();   $(this).children(".playpause").fadeOut();
+	    } else {       $(this).children(".video1").get(0).pause();
+	  $(this).children(".playpause").fadeIn();
+	    }
+	});
+</script>
+<style type="text/css">
+header h1 {
+	position: absolute;
+	right: 5%;
+	top:30px;
+}
+header img {
+	float: left;
+}
+div {
+	background-color: black;
+	font-size: 5px;
+	margin-top: 80px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+header  {
+	background-color: #FFFFFF;
+	font-family: "Lucida Console";
+	font-size: 10px;
+}
+
+@keyframes titre {
+	0% {opacity: 0%;}
+	25% {opacity: 0%;}
+	100% {opacity: 100%;}
+}
+#prp {
+	animation-name: titre;
+	animation-duration: 2s;
+	display:flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-family: "Trebuchet MS";
+	font-size: 200%;
+}
+
+@keyframes video {
+	0% {margin-left: -1000px;margin-right: 1000px;opacity: 0%}
+	40% {margin-left: -1000px;margin-right: 1000px;opacity: 0%}
+	75% {margin-left: 0px;margin-right: 0px;opacity: 100%}
+}
+#vi1div video {
+	width: 50%;
+	margin-top: -50px;
+}
+#vi1div {
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	animation-name: video;
+	animation-duration: 3s;
+}
+@keyframes descrip {
+	0% {opacity: 0%}
+	55% {opacity: 0%}
+	90% {opacity: 100%}
+}
+#description {
+	color:green;
+	background-color: #A0A0A0;
+	margin-top: -60px;
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	border-radius: 10px;
+	width:75%;
+	color:#5B5B5B;
+	animation-name: descrip;
+	animation-duration: 4s;
+}
+#org {
+	display: flex;
+	justify-content: center;
+	background-color: #FFF;
+}
+#description h1 {
+	font-family: "Lucida Console";
+	font-size: 20px;
+	margin-left: 10px;
+}
+#description p {
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+}
+.playpause {
+    background-image:url("play-icon.png");
+    background-repeat:no-repeat;
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+</style>
+
+<html>
+<head>
+	<title>#Passer-outre-les-handicaps</title>
+	<meta charset="utf-8">
+</head>
+<body>
+		<header>
+			<img src="logo2_.png" height=80px>
+			<h1>Présentation</h1>
+		</header> <br>
+		<div><p>p</p></div>
+
+		<h1 id="prp">Les Handicaps :</h1>
+
+		<div id="vi1div">
+			<video id="video1" controls>
+			 	<source src="video.mp4" type="video/mp4">
+				<div class="playpause"></div>
+			</video>
+		</div>
+		<div id="org">
+		<div id="description">
+				<h1>Les handicaps à l'école :</h1>
+				<p>Le milieux scolaire est un passage innévitable dans la vie d'une personne, handicapé ou non. Pour qu'il se passe le plus agréablement possible, il faut sensibiliser les élèves sur les effets de l'exclusion... De plus, il faut leur apprendre à regarder au delat de l'handicap : ne pas se limiter à l'apparence et engager la conversation (cela peut même engendrer de nouvelle rencontre)!
+					Néanmois, tout le monde n'est pas solidaire et il est possible que vous souffriez ou connaissez quelqu'un qui subit du harcèlement à cause de son handicap. Si c'est le cas, un <a href="https://3977.fr">numéro</a> est mit à votre disposition...</p>
+		</div>
+		</div>
+</body>
+</html>
