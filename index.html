@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <style type="text/css">
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 header h1 {
 	position: absolute;
 	right: 5%;
@@ -59,25 +67,25 @@ header  {
 }
 #description {
 	color:green;
-	background-color: #A0A0A0;
-	margin-top: -60px;
+	background-color: #FD8B5C;
+	margin-top: 0px;
 	font-family: "Trebuchet MS";
 	font-size: 10px;
 	border-radius: 10px;
-	width:75%;
+	width:70%;
+	margin-left: 15%;
 	color:#5B5B5B;
 	animation-name: descrip;
 	animation-duration: 4s;
 }
 #org {
-	display: flex;
-	justify-content: center;
 	background-color: #FFF;
 }
 #description h1 {
 	font-family: "Lucida Console";
 	font-size: 20px;
 	margin-left: 10px;
+	color: #B30000 ;
 }
 #description p {
 	color: white;
@@ -85,18 +93,85 @@ header  {
 	margin-left: 10px;
 	margin-right: 10px;
 	text-align: justify;
+	color: #FDFF00;
 }
 
+#bande {
+	width:100%;
+	margin-top: -50px;
+	margin-left: 0px;
+	background-color: #e9e0ff ;
+	animation-name: descrip;
+	animation-duration: 4s;
+}
+
+#bande h1 {
+	color: #7f42b9;
+	font-family: 'Oswald', sans-serif;
+	font-size: 27px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+#bande p {
+	font-family: "Arial";
+	font-size: 18px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: -10px;
+	font-style: italic; 
+}
+.inclusion2 {
+	width:60%;
+	background-color: #e9e0ff;
+	margin-left: 20%;
+}
+#bande h3{color: #e9e0ff}
+
+#bande2 {
+	width:100%;
+	background: #FFF;
+	color:#5F13A7;
+	margin-top: 0px;
+	margin-left: 0px;
+	animation-name: descrip;
+	animation-duration: 6s;
+}
+#bande2 h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 27px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+#bande2 p {
+	font-family: "Trebuchet MS";
+	font-size: 18px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: -10px;
+	color: #000000; 
+}
+.pppp {
+	width:10%;
+	padding-bottom: 10px;
+	margin-left: 45%;
+}
 </style>
 
 <html>
 <head>
 	<title>#Passer-outre-les-handicaps</title>
 	<meta charset="utf-8">
+	<!-- Police Oswald -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 		<header>
-			<img src="https://github.com/passer-outre-les-handicaps/passer-outre-les-handicaps.github.io/blob/main/logo2_.PNG?raw=true" height=80px>
+			<img src="logo2_.PNG" height=80px>
 			<h1>Présentation</h1>
 		</header> <br>
 		<div><p>p</p></div>
@@ -114,11 +189,47 @@ header  {
 			</script>
 		</div>
 		<div id="org">
+			<!--<div id="description">
+					<h1>Les handicaps à l'école :</h1>
+					<p>Le milieux scolaire est un passage innévitable dans la vie d'une personne, handicapé ou non. Pour qu'il se passe le plus agréablement possible, il faut sensibiliser les élèves sur les effets de l'exclusion... De plus, il faut leur apprendre à regarder au delat de l'handicap : ne pas se limiter à l'apparence et engager la conversation (cela peut même engendrer de nouvelle rencontre)!
+						Néanmois, tout le monde n'est pas solidaire et il est possible que vous souffriez ou connaissez quelqu'un qui subit du harcèlement à cause de son handicap. Si c'est le cas, un <a href="https://3977.fr">numéro</a> est mit à votre disposition...</p>
+			</div>
+			-->
+			<div id="bande">
+				<h1>C'est quoi un handicapé ?</h1>
+				<p>Une personne handicapée est une personne comme vous et moi qui a un handicap. Il existe deux types d’handicap, ceux qui sont visible et ceux qui sont invisible.</p>
+				<img class="inclusion2" src="inclusion.JPG">
+				<h3>ok</h3>
+			</div><br><br>
+			<div id="bande2">
+				<h1>Handicap visible, c’est quoi ?</h1>
+				<p>Parmi ceux qui se voient, on retrouve notamment les <strong>handicaps moteurs</strong> (paralysie...)</p>
+				<img class="pppp" src="chaise-roulante.png">
+				<p>Leur origine est soit génétique, soit c’est la conséquence d’un accident. Si on qualifie de visible cet handicap c’est parce que les personnes concernés ont une façon de marcher différente où utilise du matériel comme des chaises roulantes.  </p>
+			</div>
+			<br><br><br><br><br><br><br><br>
+			<div id="bande">
+				<h1>Handicap invisible, c'est quoi ?</h1>
+				<p>Les handicaps invisibles sont beaucoup plus nombreux et généralement moins connus. Les premiers qui me viennent en tête sont les <strong>handicaps intellectuels</strong>, aussi appelés les troubles cognitifs. Les personnes touchées ont des problèmes de mémoire et des difficultés à s’adapter, à prendre des décisions et à planifier. </p>
+				<img class="pppp" src="idee-de-genie.png">
+
+				<p>Malheureusement cet handicap est très peu connu... Viennent ensuite les <strong>handicaps visuels</strong> avec une obstruction partielle ou totale de la vue. </p>
+				<img class="pppp" src="aveugle.png">
+				<p> Les <strong>handicaps auditifs</strong>, donc les personnes qui sont sourde ou malentendantes. </p>
+				<img class="pppp" src="sourd.png">
+				<p> Viennent ensuite <strong>handicaps psychiques</strong>, comme le retard mental ou le trouble de la personnalité. Enfin, il y a les <strong>handicaps provenant de maladie génétique</strong> comme l’asthme, la dyslexie ou la mucoviscidose…</p>
+				<img class="pppp" src="dyslexie.png">
+			</div><br><br>
+			<div id="bande2">
+				<h1>Il y a un handicapé dans ma classe, que faire ?</h1>
+				<p>Si vous avez un handicapé dans votre classe, la première chose à faire et <strong>d’aller lui parler</strong>. Je sais que cela peut sembler difficile, car bien souvent on ne connait pas la maladie, mais il faut toujours avoir en tête que cette personnes <strong>ne va pas se fâcher</strong>, ni chercher à vous prendre de haut.</p>
+				<p>Son handicap ne l’empêche pas d’être <strong>sympathique</strong>, <strong>marrante</strong>, <strong>intéressante</strong> et une <strong>amitié</strong> pourra même se créer. Alors oui, vous n’allez pas non plus faire du vtt avec mais, lors des repas ou des intercours, parler avec sera agréable.</p>
+			</div>
+		</div>
 		<div id="description">
 				<h1>Les handicaps à l'école :</h1>
 				<p>Le milieux scolaire est un passage innévitable dans la vie d'une personne, handicapé ou non. Pour qu'il se passe le plus agréablement possible, il faut sensibiliser les élèves sur les effets de l'exclusion... De plus, il faut leur apprendre à regarder au delat de l'handicap : ne pas se limiter à l'apparence et engager la conversation (cela peut même engendrer de nouvelle rencontre)!
 					Néanmois, tout le monde n'est pas solidaire et il est possible que vous souffriez ou connaissez quelqu'un qui subit du harcèlement à cause de son handicap. Si c'est le cas, un <a href="https://3977.fr">numéro</a> est mit à votre disposition...</p>
-		</div>
 		</div>
 </body>
 </html>
